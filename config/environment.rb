@@ -22,6 +22,9 @@ require 'erb'
 require 'faker'
 require 'bcrypt'
 require 'pry'
+require 'dotenv'
+require 'open-uri'
+require 'json'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
