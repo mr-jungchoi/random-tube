@@ -19,7 +19,6 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'erb'
-require 'faker'
 require 'bcrypt'
 require 'pry'
 require 'dotenv'
