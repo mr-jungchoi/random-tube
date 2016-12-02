@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('#search').on('submit', function(event) {
-    // event.preventDefault();
-    var $form = $(this)
+  $('#randomize').on('submit', function(event) {
+    event.preventDefault();
+    var $form = $(this).closest('form')
     var $player = $('#player');
 
     var request = $.ajax({
@@ -10,13 +10,7 @@ $(document).ready(function() {
     });
 
     request.done(function(response) {
-      $player.attr();
+      $player.attr('src', "https://www.youtube.com/embed/"+response);
     })
-
-  })
-
-  $('#randomize').on('submit', function() {
-    // event.preventDefault();
-
   })
 });
