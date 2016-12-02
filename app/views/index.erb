@@ -1,16 +1,11 @@
-<form id='search' action='/vidoes'>
+<form id='randomize' action='/videos'>
   <input type='text' name='search' placeholder='search youtube'>
-  <input type='submit' value="Search">
-</form>
-
-<form id='randomize' action='/vidoes' method='post'>
-  <input type='hidden' name='search' value='random'>
   <input type='submit' value="Randomize">
 </form>
 
 <iframe id="player" type="text/html"
         width="640" height="390"
-        src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+        src="https://www.youtube.com/embed/<%= @video.youtube_id %>"
         frameborder="0"
         style="border: solid 4px #37474F"
 ></iframe>
